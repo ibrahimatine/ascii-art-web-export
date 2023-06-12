@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta description="La description d'Ascii-Art-Web.........">
+    <meta author="cisall mouwade itine">
+    <!--<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/water.css@2/out/dark.css">-->
+    <title>Ascii-Art-Web</title>
+</head>
+<body>
+    <h1><a href="https://learn.zone01dakar.sn/git/root/public/src/branch/master/subjects/ascii-art-web/README.md" target="_blank">Ascii-Art-Web</a></h1>
+    <form name="Result_Ascii" method="post" action="ascii-art" >
+    <br>
+        <div id="Input">
+            <textarea name="Saisie" id="id_Saisie" placeholder="Entrez votre texte ici..." rows="5" cols="35"></textarea>
+        </div>
+        <br>
+        <div  id="Banner">
+            <input type="radio" name="Banner" id="id_Standard" value="Standard">
+            <label for="id_Standard">Standard</label>
+            <input type="radio" name="Banner" id="id_Shadow" value="Shadow">
+            <label for="id_Shadow">Shadow</label>
+            <input type="radio" name="Banner" id="id_Thinkertoy" value="Thinkertoy">
+            <label for="id_Thinkertoy">Thinkertoy</label>
+            <br><br><input type="submit" name="Envoyez" id="id_Submit" value="Send">
+            </div>
+    </form>
+        <div id="Output">
+            <pre>{{.Sortie}}</pre>
+        </div>
+        
+         <form id="formatselection" action="download" method="POST">
+         <div>
+         <p>Select file type</p>
+         <input type="radio" id="doc" name="fileformat" value="doc">
+         <label for="doc">doc</label><br>
+         <input type="radio" id="txt" name="fileformat" value="txt">
+         <label for="txt">txt</label><br><br>
+         <button class="button">Telecharger ici</button>
+      </div>
+   </form>
+        <style>
+            h1{
+                text-align: center;
+            }
+        </style>
+</body>
+</html>
